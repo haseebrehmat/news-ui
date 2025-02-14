@@ -40,7 +40,7 @@ The main application component that sets up the router and defines the routes fo
 1. Clone the repository:
    ```sh
    git clone https://github.com/haseebrehmat/news-ui.git
-   cd news-portal
+   cd news-ui
    ```
 
 2. Install dependencies:
