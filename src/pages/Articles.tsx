@@ -51,7 +51,7 @@ const Articles = () => {
   return (
     <div className='max-w-4xl mx-auto'>
       <div className='mb-8'>
-        <div className='flex flex-col md:flex-row gap-4 mb-6'>
+        <div className='flex flex-wrap flex-col md:flex-row gap-4 mb-6'>
           <div className='flex-1'>
             <div className='relative'>
               <Search className='absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5' />
@@ -64,7 +64,7 @@ const Articles = () => {
               />
             </div>
           </div>
-          <div className='flex gap-4'>
+          <div className='flex flex-wrap gap-4'>
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
@@ -94,7 +94,7 @@ const Articles = () => {
               disabled={loading}
               className='flex items-center bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors disabled:opacity-50'
             >
-              {loading ? 'Loading...' : 'Apply Filters'}
+              {loading ? 'Loading...' : 'Apply'}
             </button>
           </div>
         </div>
